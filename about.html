@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ABuS]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">plusher.<span>clothing</span></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Collection</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <div class="mobile-menu" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container hero-content">
+            <h1>FROM THE FAVELA TO THE STREETS</h1>
+            <p>Authentic Brazilian street culture meets urban fashion</p>
+        </div>
+    </section>
+
+    <!-- Creator Story -->
+    <section class="about-content">
+        <div class="container">
+            <div class="creator-section">
+                <div class="creator-image">
+                    <img src="images/logo-1.png" alt="Creator" class="creator-img">
+                    <div class="creator-logo">
+                        <img src="images/logo-3.png" alt="Creator Face Logo">
+                    </div>
+                </div>
+                <div class="creator-text">
+                    <h2>THE VISION BEHIND PLUSHER</h2>
+                    <p>I'm just a Brazilian guy from the favelas with a dream to create something real. Growing up surrounded by vibrant colors, raw energy, and the undeniable spirit of my community, I saw fashion not just as clothing, but as identity.</p>
+                    <p>PLUSHER was born from late nights sketching designs on whatever paper I could find, fueled by passion and the sounds of the city. Every piece tells a story - of resilience, of culture, of the streets that raised me.</p>
+                    <p>This isn't just streetwear; it's a piece of my home, my journey, and the vibrant energy of Brazilian favelas translated into threads you can wear.</p>
+                    <p class="accent-text">This is our culture. This is our voice. This is PLUSHER.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="gallery-title">BEHIND THE SCENES</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/cao.jpg" alt="Street Art">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cara.jpg" alt="Urban Scene">
+                </div>
+                <div class="gallery-item gallery-item-large">
+                    <img src="images/banner-1.jpg" alt="Street Culture">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/logo-3.png" alt="Urban Wear Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container mission-content">
+            <h2>OUR MISSION</h2>
+            <p>We believe fashion should tell a story, connect communities, and empower self-expression without losing its raw, unfiltered essence.</p>
+            <p>Every stitch, every design, every collection is a tribute to the streets that inspire us.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PLUSHER</h3>
+                    <h4>"Imagine being born in this world and not getting rich."</h4>
+                    <h6>"LIFE IS JUST A ONE-TIME THING"</h6>                    
+                    <div class="social-icons">
+                        <li>
+                            <a href="https://www.instagram.com/plusher.clothing/" target="_blank">
+                                <i class="fab fa-instagram"></i> 
+                            </a>
+                        </li>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#" onclick="window.location.href='index.html#products'; return false;">All Products</a></li>
+                        <li>New Arrivals</li>
+                        <li>Bestsellers</li>
+                        <li>Sale</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#" onclick="window.location.href='about.html'">About Us</li>
+                        
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>support@.com</li>
+                        <li>21840-060</li>
+                        <li>Bangu Viaduct, 169 - RJ,</li>
+                        <li>Customer Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PLUSHER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mainNav = document.getElementById('main-nav');
+            
+            mobileMenu.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mainNav.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
